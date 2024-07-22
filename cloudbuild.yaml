@@ -10,15 +10,27 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'us-central1-docker.pkg.dev/clinical-assistant-429217/clinical-assistant/clinical-assistant-app:latest']
 
-# Step 3: Apply the Kubernetes configuration for the Clinical Assistant app
+# Step 3: Get credentials for the GKE cluster
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      gcloud container clusters get-credentials autopilot-ca --region=us-central1 --project=clinical-assistant-429217
+
+# Step 4: Apply the Kubernetes configuration for the Clinical Assistant app
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['apply', '-f', 'kubernetes/clinical-assistant-app.yaml']
+  env:
+    - 'CLOUDSDK_CORE_PROJECT=clinical-assistant-429217'
 
-# Step 4: Apply the static Ingress configuration
+# Step 5: Apply the static Ingress configuration
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['apply', '-f', 'kubernetes/ingress.yaml']
+  env:
+    - 'CLOUDSDK_CORE_PROJECT=clinical-assistant-429217'
 
-# Step 5: Trigger Cloud Deploy for the new release
+# Step 6: Trigger Cloud Deploy for the new release
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
   args:
