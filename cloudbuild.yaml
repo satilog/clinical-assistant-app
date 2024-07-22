@@ -81,4 +81,4 @@ steps:
 images:
 - 'us-central1-docker.pkg.dev/clinical-assistant-429217/clinical-assistant/clinical-assistant-app:latest'
 
-timeout: '1200s'  # Set a timeout for the build process
+timeout: '1200s' 
