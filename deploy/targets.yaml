@@ -1,0 +1,7 @@
+apiVersion: deploy.cloud.google.com/v1
+kind: Target
+metadata:
+  name: prod-clinical-assistant-app
+description: Production environment for the Clinical Assistant application
+gke:
+  cluster: projects/clinical-assistant-429217/locations/us-central1/clusters/autopilot-ca
