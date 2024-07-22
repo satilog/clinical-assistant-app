@@ -7,7 +7,7 @@ export default function Overview() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch(process.env.API_URL + "/admission_locations")
+    fetch(process.env.NEXT_PUBLIC_API_URL + "/admission_locations")
       .then((response) => response.json())
       .then((data) => {
         const formattedData = data.map((item: any) => ({
