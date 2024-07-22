@@ -1,3 +1,5 @@
+"use client";
+
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -10,6 +12,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import AdmissionLocations from '@/partials/dashboard/AdmissionLocations';
+
 // import { CalendarDateRangePicker } from "@/components/components/date-range-picker";
 // import { MainNav } from "@/components/components/main-nav";
 // import { Overview } from "@/components/components/overview";
@@ -137,11 +141,11 @@ export default function DashboardPartial() {
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
             <Card className="col-span-4">
               <CardHeader>
-                <CardTitle>Overview</CardTitle>
+                <CardTitle>Admission Locations</CardTitle>
               </CardHeader>
-              {/* <CardContent className="pl-2">
-                    <Overview />
-                  </CardContent> */}
+              <CardContent className="pl-2">
+                    <AdmissionLocations />
+                  </CardContent>
             </Card>
             <Card className="col-span-3">
               <CardHeader>
