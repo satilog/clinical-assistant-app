@@ -1,0 +1,18 @@
+apiVersion: skaffold/v4beta9
+kind: Config
+build:
+  tagPolicy:
+    gitCommit: {}
+  artifacts:
+  - image: us-central1-docker.pkg.dev/clinical-assistant-429217/clinical-assistant/clinical-assistant-app
+    context: .
+    docker:
+      dockerfile: Dockerfile
+manifests:
+  rawYaml:
+    - kubernetes/clinical-assistant-app.yaml
+    - kubernetes/ingress.yaml  # Include the Ingress configuration if managed here
+deploy:
+  kubectl: {}
+  logs:
+    prefix: container
