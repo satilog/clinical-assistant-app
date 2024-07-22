@@ -28,10 +28,8 @@ steps:
     - '--region=us-central1'
     - '--project=clinical-assistant-429217'
 
-
-
 # Step 5: Get credentials for the GKE cluster
-- name: 'gcr.io/cloud-builders/gcloud'
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'bash'
   args:
     - '-c'
@@ -43,16 +41,28 @@ steps:
       kubectl get nodes
 
 # Step 6: Apply the Kubernetes configuration for the Clinical Assistant app
-- name: 'gcr.io/cloud-builders/kubectl'
-  args: ['apply', '-f', 'kubernetes/clinical-assistant-app.yaml']
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'bash'
   env:
     - 'CLOUDSDK_CORE_PROJECT=clinical-assistant-429217'
+    - 'CLOUDSDK_COMPUTE_REGION=us-central1'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=autopilot-ca'
+  args:
+    - '-c'
+    - |
+      kubectl apply -f kubernetes/clinical-assistant-app.yaml
 
 # Step 7: Apply the static Ingress configuration
-- name: 'gcr.io/cloud-builders/kubectl'
-  args: ['apply', '-f', 'kubernetes/ingress.yaml']
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'bash'
   env:
     - 'CLOUDSDK_CORE_PROJECT=clinical-assistant-429217'
+    - 'CLOUDSDK_COMPUTE_REGION=us-central1'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=autopilot-ca'
+  args:
+    - '-c'
+    - |
+      kubectl apply -f kubernetes/ingress.yaml
 
 # Step 8: Trigger Cloud Deploy for the new release
 - name: 'gcr.io/cloud-builders/gcloud'
@@ -60,10 +70,10 @@ steps:
   args:
     - '-c'
     - |
-      gcloud deploy releases create clinical-assistant-app-release-$(date +%Y%m%d-%H%M%S) \
+      gcloud deploy releases create clinical-assistant-release-$(date +%Y%m%d-%H%M%S) \
       --project=clinical-assistant-429217 \
       --region=us-central1 \
-      --delivery-pipeline=clinical-assistant-app-pipeline \
+      --delivery-pipeline=clinical-assistant-pipeline \
       --images=clinical-assistant-container=us-central1-docker.pkg.dev/clinical-assistant-429217/clinical-assistant/clinical-assistant-app:latest \
       --annotations=commit-sha=$(git rev-parse HEAD) \
       --skaffold-file=skaffold.yaml
