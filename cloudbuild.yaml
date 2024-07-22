@@ -40,7 +40,7 @@ steps:
       echo "Using DNS name: $DNS_NAME"
       
       # Replace placeholder in ingress.yaml with the actual IP address
-      sed "s/YOUR_IP_ADDRESS/$INGRESS_IP/g" kubernetes/ingress.yaml > kubernetes/ingress-temp.yaml
+      gsutil cat kubernetes/ingress.yaml | sed "s/YOUR_IP_ADDRESS/$INGRESS_IP/g" kubernetes/ingress.yaml > kubernetes/ingress-temp.yaml
       
       # Apply the updated Ingress configuration
       kubectl apply -f kubernetes/ingress-temp.yaml

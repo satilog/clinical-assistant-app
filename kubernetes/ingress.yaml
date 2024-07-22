@@ -25,3 +25,4 @@ spec:
             name: clinical-assistant-service
             port:
               number: 80
+
