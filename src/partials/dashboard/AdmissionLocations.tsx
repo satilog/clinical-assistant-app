@@ -7,7 +7,7 @@ export default function Overview() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://34.172.105.113/admission_locations")
+    fetch(process.env.API_URL + "/admission_locations")
       .then((response) => response.json())
       .then((data) => {
         const formattedData = data.map((item: any) => ({
