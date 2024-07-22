@@ -70,7 +70,7 @@ steps:
   args:
     - '-c'
     - |
-      gcloud deploy releases create clinical-assistant-release-$(date +%Y%m%d-%H%M%S) \
+      gcloud deploy releases create ca-app-release-$(date +%Y%m%d-%H%M%S) \
       --project=clinical-assistant-429217 \
       --region=us-central1 \
       --delivery-pipeline=clinical-assistant-app-pipeline \
