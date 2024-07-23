@@ -80,7 +80,7 @@ steps:
       else
         echo "FrontendConfig already exists"
       fi
-      
+
 # Step 9: Apply the static Ingress configuration
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'bash'
@@ -99,7 +99,7 @@ steps:
   args:
     - '-c'
     - |
-      gcloud deploy releases create ca-app-release-$(date +%Y%m%d-%H%M%S) \
+      gcloud deploy releases create ca-app-release-$(date +%Y%m%d%H%M%S) \
       --project=clinical-assistant-429217 \
       --region=us-central1 \
       --delivery-pipeline=clinical-assistant-app-pipeline \
