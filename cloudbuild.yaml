@@ -52,7 +52,24 @@ steps:
     - |
       kubectl apply -f kubernetes/clinical-assistant-app.yaml
 
-# Step 7: Apply the static Ingress configuration
+# Step 7: Check and apply the Managed Certificate configuration
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'bash'
+  env:
+    - 'CLOUDSDK_CORE_PROJECT=clinical-assistant-429217'
+    - 'CLOUDSDK_COMPUTE_REGION=us-central1'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=autopilot-ca'
+  args:
+    - '-c'
+    - |
+      if ! kubectl get managedcertificate clinical-assistant-cert -n prod-namespace; then
+        kubectl apply -f kubernetes/managed-cert.yaml
+      else
+        echo "Managed Certificate already exists"
+      fi
+
+
+# Step 8: Apply the static Ingress configuration
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'bash'
   env:
@@ -64,7 +81,7 @@ steps:
     - |
       kubectl apply -f kubernetes/ingress.yaml
 
-# Step 8: Trigger Cloud Deploy for the new release
+# Step 9: Trigger Cloud Deploy for the new release
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
   args:

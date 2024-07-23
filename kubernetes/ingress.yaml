@@ -4,25 +4,26 @@ metadata:
   name: main-ingress
   namespace: default
   annotations:
-    kubernetes.io/ingress.class: "gce"  
+    kubernetes.io/ingress.class: "gce"
+    kubernetes.io/ingress.global-static-ip-name: "web-static-ip"
+    networking.gke.io/managed-certificates: managed-cert
+    networking.gke.io/v1beta1.FrontendConfig: "http-to-https"
 spec:
   rules:
-  - host: 34.134.255.68.nip.io  
+  - host: clinicalassistant.ai
     http:
       paths:
-      - path: /*
-        pathType: prefix
-        backend:
-          service:
-            name: clinical-assistant-service
-            port:
-              number: 80
-
       - path: /api/*
-        pathType: prefix
+        pathType: ImplementationSpecific
         backend:
           service:
             name: fastapi-service
             port:
               number: 80
-      
+      - path: /*
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: clinical-assistant-service
+            port:
+              number: 80
