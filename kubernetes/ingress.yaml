@@ -27,7 +27,7 @@ spec:
             name: clinical-assistant-service
             port:
               number: 80
-  tls:
-  - hosts:
-    - clinicalassistant.ai
-    secretName: managed-cert
+  # tls:
+  # - hosts:
+  #   - clinicalassistant.ai
+  #   secretName: managed-cert
