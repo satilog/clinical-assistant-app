@@ -32,7 +32,8 @@ export default function PatientDetail() {
 
   useEffect(() => {
     if (id) {
-      fetch(process.env.NEXT_PUBLIC_API_URL + `/icu_patients`)
+    //   fetch(process.env.NEXT_PUBLIC_API_URL + `/icu_patients`)
+      fetch("http://34.42.46.22" + `/icu_patients`)
         .then((response) => response.json())
         .then((data) => {
           setPatient(data.filter((p: any) => p.subject_id == id)[0]);
@@ -40,7 +41,8 @@ export default function PatientDetail() {
         .catch((error) => console.error("Error fetching data:", error));
 
       fetch(
-        process.env.NEXT_PUBLIC_API_URL +
+        // process.env.NEXT_PUBLIC_API_URL +
+        "http://34.42.46.22" +
           `/get_transfer_history?subject_id=${id}`
       )
         .then((response) => response.json())
@@ -50,7 +52,7 @@ export default function PatientDetail() {
         .catch((error) => console.error("Error fetching data:", error));
 
       fetch(
-        process.env.NEXT_PUBLIC_API_URL + `/icu_patient_detail?subject_id=${id}`
+        "http://34.42.46.22" + `/icu_patient_detail?subject_id=${id}`
       )
         .then((response) => response.json())
         .then((data) => {

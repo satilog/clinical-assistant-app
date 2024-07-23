@@ -5,11 +5,10 @@ import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from "recha
 
 export default function StatBarChart({ pathName, fieldName }: { pathName: string, fieldName: string }) {
   const [data, setData] = useState([]);
-  
-  console.log(process.env.NEXT_PUBLIC_API_URL + pathName)
 
   useEffect(() => {
-    fetch(process.env.NEXT_PUBLIC_API_URL + pathName)
+    // fetch(process.env.NEXT_PUBLIC_API_URL + pathName)
+    fetch("http://34.42.46.22" + pathName)
       .then((response) => response.json())
       .then((data) => {
         const formattedData = data.map((item: any) => ({

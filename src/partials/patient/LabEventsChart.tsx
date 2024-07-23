@@ -41,7 +41,8 @@ export default function LabEventsChart({ id }: { id: any }) {
 
   useEffect(() => {
     fetch(
-      process.env.NEXT_PUBLIC_API_URL + `/subject_lab_events?subject_id=${id}`
+      //   process.env.NEXT_PUBLIC_API_URL + `/subject_lab_events?subject_id=${id}`
+      "http://34.42.46.22" + `/subject_lab_events?subject_id=${id}`
     )
       .then((response) => response.json())
       .then((data) => {
