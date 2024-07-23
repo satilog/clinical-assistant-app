@@ -1,7 +1,7 @@
 apiVersion: deploy.cloud.google.com/v1
 kind: DeliveryPipeline
 metadata:
-  name: clinical-assistant-app-pipeline
+  name: ca-app-pipeline
 description: Delivery pipeline for the Clinical Assistant application
 serialPipeline:
   stages:
