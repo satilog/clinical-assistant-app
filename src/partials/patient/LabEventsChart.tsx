@@ -24,7 +24,7 @@ import {
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import dayjs from "dayjs";
 
-const CustomDot = (props) => {
+const CustomDot = (props: any) => {
   const { cx, cy, value } = props;
 
   return <circle cx={cx} cy={cy} r={3} stroke="1.5" fill="white" />;
@@ -47,7 +47,7 @@ export default function LabEventsChart({ id }: { id: any }) {
       .then((data) => {
         setData(data);
         const uniqueLabels: any = [
-          ...new Set(data.map((item: any) => item.label)),
+          ...Array.from(new Set(data.map((item: any) => item.label))),
         ];
         setLabels(uniqueLabels);
         setSelectedLabel(uniqueLabels[0]);
@@ -73,7 +73,7 @@ export default function LabEventsChart({ id }: { id: any }) {
   }, [selectedLabel, data]);
 
   const getYAxisDomain = () => {
-    const values = filteredData.map((item) => item.valuenum);
+    const values = filteredData.map((item: any) => item.valuenum);
     const min = Math.min(...values, refRange.lower);
     const max = Math.max(...values, refRange.upper);
     return [min, max];
