@@ -1,0 +1,27 @@
+steps:
+  - name: 'gcr.io/cloud-builders/npm'
+    entrypoint: 'npm'
+    args: ['install']
+
+  - name: 'gcr.io/cloud-builders/npm'
+    entrypoint: 'npm'
+    args: ['run', 'build']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'build', '-t', 'gcr.io/clinical-assistant-429217/nextjs-app:$SHORT_SHA', '.'
+    ]
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'push', 'gcr.io/clinical-assistant-429217/nextjs-app:$SHORT_SHA'
+    ]
+
+  - name: 'gcr.io/cloud-builders/kubectl'
+    args: ['set', 'image', 'deployment/nextjs-app', 'nextjs-app=gcr.io/clinical-assistant-429217/nextjs-app:$SHORT_SHA']
+    env:
+      - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
+      - 'CLOUDSDK_CONTAINER_CLUSTER=my-gke-cluster'
+
+images:
+  - 'gcr.io/clinical-assistant-429217/nextjs-app:$SHORT_SHA'

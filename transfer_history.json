@@ -1,0 +1,2477 @@
+[
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20688486,
+    "transfer_id": 37413430,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2122-06-07 18:08:00",
+    "outtime": "2122-06-07 22:38:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20688486,
+    "transfer_id": 36084450,
+    "eventtype": "admit",
+    "careunit": "Coronary Care Unit (CCU)",
+    "intime": "2122-06-07 22:38:00",
+    "outtime": "2122-06-08 19:57:30"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20688486,
+    "transfer_id": 31248128,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2122-06-08 19:57:30",
+    "outtime": "2122-06-12 13:08:22"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25422437,
+    "transfer_id": 37016134,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2122-08-05 14:03:00",
+    "outtime": "2122-08-05 19:03:52"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25422437,
+    "transfer_id": 31240951,
+    "eventtype": "admit",
+    "careunit": "Medical/Surgical Intensive Care Unit (MICU/SICU)",
+    "intime": "2122-08-05 19:03:52",
+    "outtime": "2122-08-05 19:06:57"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25422437,
+    "transfer_id": 33920157,
+    "eventtype": "transfer",
+    "careunit": "Medical/Surgical Intensive Care Unit (MICU/SICU)",
+    "intime": "2122-08-05 19:06:57",
+    "outtime": "2122-08-07 18:22:41"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25422437,
+    "transfer_id": 37279963,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2122-08-07 18:22:41",
+    "outtime": "2122-08-08 14:04:04"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24129940,
+    "transfer_id": 37973679,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2123-02-21 18:47:00",
+    "outtime": "2123-02-22 02:19:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24129940,
+    "transfer_id": 31185663,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2123-02-22 02:19:00",
+    "outtime": "2123-02-25 15:14:18"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28860306,
+    "transfer_id": 33855117,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2123-02-26 12:47:00",
+    "outtime": "2123-02-26 21:27:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28860306,
+    "transfer_id": 34892337,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2123-02-26 21:27:00",
+    "outtime": "2123-02-28 14:27:42"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21143920,
+    "transfer_id": 35301000,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2123-03-02 23:33:00",
+    "outtime": "2123-03-03 04:11:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21143920,
+    "transfer_id": 32512122,
+    "eventtype": "admit",
+    "careunit": "Neurology",
+    "intime": "2123-03-03 04:11:00",
+    "outtime": "2123-03-03 13:53:12"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26139327,
+    "transfer_id": 33310416,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2123-04-15 21:09:00",
+    "outtime": "2123-04-16 01:22:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26139327,
+    "transfer_id": 31046869,
+    "eventtype": "admit",
+    "careunit": "Medical/Surgical (Gynecology)",
+    "intime": "2123-04-16 01:22:00",
+    "outtime": "2123-04-16 15:40:34"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22653128,
+    "transfer_id": 32694232,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2123-06-22 11:53:00",
+    "outtime": "2123-06-22 14:37:10"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22653128,
+    "transfer_id": 36837081,
+    "eventtype": "admit",
+    "careunit": "Medical/Surgical Intensive Care Unit (MICU/SICU)",
+    "intime": "2123-06-22 14:37:10",
+    "outtime": "2123-06-22 14:47:20"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22653128,
+    "transfer_id": 39600807,
+    "eventtype": "transfer",
+    "careunit": "Medical/Surgical Intensive Care Unit (MICU/SICU)",
+    "intime": "2123-06-22 14:47:20",
+    "outtime": "2123-06-24 18:07:34"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22653128,
+    "transfer_id": 35044941,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2123-06-24 18:07:34",
+    "outtime": "2123-06-24 18:26:18"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22653128,
+    "transfer_id": 39187101,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2123-06-24 18:26:18",
+    "outtime": "2123-06-28 16:58:10"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21014113,
+    "transfer_id": 32211268,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2123-11-09 17:18:00",
+    "outtime": "2123-11-10 03:00:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21014113,
+    "transfer_id": 35559384,
+    "eventtype": "admit",
+    "careunit": "Cardiac Surgery",
+    "intime": "2123-11-10 03:00:00",
+    "outtime": "2123-11-11 15:37:07"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21014113,
+    "transfer_id": 33302343,
+    "eventtype": "transfer",
+    "careunit": "Cardiac Surgery",
+    "intime": "2123-11-11 15:37:07",
+    "outtime": "2123-11-15 18:01:26"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25769994,
+    "transfer_id": 38236753,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2124-01-28 12:52:00",
+    "outtime": "2124-01-28 22:03:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25769994,
+    "transfer_id": 30785712,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2124-01-28 22:03:00",
+    "outtime": "2124-02-02 17:22:40"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22715032,
+    "transfer_id": 36905378,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2124-02-05 03:07:00",
+    "outtime": "2124-02-05 07:59:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22715032,
+    "transfer_id": 33550851,
+    "eventtype": "admit",
+    "careunit": "Medical Intensive Care Unit (MICU)",
+    "intime": "2124-02-05 07:59:00",
+    "outtime": "2124-02-06 16:54:41"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22715032,
+    "transfer_id": 34589632,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2124-02-06 16:54:41",
+    "outtime": "2124-02-08 13:16:27"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 27173959,
+    "transfer_id": 36571229,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2124-03-26 07:38:00",
+    "outtime": "2124-03-26 14:10:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 27173959,
+    "transfer_id": 35970900,
+    "eventtype": "admit",
+    "careunit": "Neurology",
+    "intime": "2124-03-26 14:10:00",
+    "outtime": "2124-03-27 16:25:43"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 27173959,
+    "transfer_id": 33965289,
+    "eventtype": "transfer",
+    "careunit": "Neurology",
+    "intime": "2124-03-27 16:25:43",
+    "outtime": "2124-03-27 16:28:25"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 27173959,
+    "transfer_id": 33902371,
+    "eventtype": "transfer",
+    "careunit": "Neurology",
+    "intime": "2124-03-27 16:28:25",
+    "outtime": "2124-03-30 16:38:44"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26828958,
+    "transfer_id": 37771401,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2124-04-02 12:32:00",
+    "outtime": "2124-04-02 17:49:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26828958,
+    "transfer_id": 32624393,
+    "eventtype": "admit",
+    "careunit": "Medical/Surgical Intensive Care Unit (MICU/SICU)",
+    "intime": "2124-04-02 17:49:00",
+    "outtime": "2124-04-05 19:53:01"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26828958,
+    "transfer_id": 35621137,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2124-04-05 19:53:01",
+    "outtime": "2124-04-08 04:40:13"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26828958,
+    "transfer_id": 35048953,
+    "eventtype": "transfer",
+    "careunit": "Medical/Surgical Intensive Care Unit (MICU/SICU)",
+    "intime": "2124-04-08 04:40:13",
+    "outtime": "2124-04-08 21:29:22"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26828958,
+    "transfer_id": 34982617,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2124-04-08 21:29:22",
+    "outtime": "2124-04-10 15:39:24"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20248515,
+    "transfer_id": 33843823,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2124-08-16 10:14:00",
+    "outtime": "2124-08-16 21:53:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20248515,
+    "transfer_id": 39670309,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2124-08-16 21:53:00",
+    "outtime": "2124-08-22 16:42:40"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28248339,
+    "transfer_id": 30307614,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2124-08-31 13:56:00",
+    "outtime": "2124-09-01 05:10:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28248339,
+    "transfer_id": 39692934,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2124-09-01 05:10:00",
+    "outtime": "2124-09-01 10:16:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28248339,
+    "transfer_id": 39474651,
+    "eventtype": "admit",
+    "careunit": "Medical/Surgical (Gynecology)",
+    "intime": "2124-09-01 10:16:00",
+    "outtime": "2124-09-04 16:40:13"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25769380,
+    "transfer_id": 30335881,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2124-10-23 19:13:00",
+    "outtime": "2124-10-23 23:54:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25769380,
+    "transfer_id": 38997327,
+    "eventtype": "admit",
+    "careunit": "Coronary Care Unit (CCU)",
+    "intime": "2124-10-23 23:54:00",
+    "outtime": "2124-10-24 20:46:09"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25769380,
+    "transfer_id": 38195005,
+    "eventtype": "transfer",
+    "careunit": "Medical Intensive Care Unit (MICU)",
+    "intime": "2124-10-24 20:46:09",
+    "outtime": "2124-10-29 20:59:23"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25769380,
+    "transfer_id": 39681923,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2124-10-29 20:59:23",
+    "outtime": "2124-10-30 16:06:43"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25506909,
+    "transfer_id": 39827657,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2124-11-21 10:22:00",
+    "outtime": "2124-11-21 16:00:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25506909,
+    "transfer_id": 34749372,
+    "eventtype": "admit",
+    "careunit": "Vascular",
+    "intime": "2124-11-21 16:00:00",
+    "outtime": "2124-11-23 15:47:32"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26794684,
+    "transfer_id": 33294022,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2124-11-23 18:56:00",
+    "outtime": "2124-11-24 16:05:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26794684,
+    "transfer_id": 32933088,
+    "eventtype": "admit",
+    "careunit": "Emergency Department Observation",
+    "intime": "2124-11-24 16:05:00",
+    "outtime": "2124-11-24 16:07:40"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22026156,
+    "transfer_id": 38882946,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2124-11-25 14:03:00",
+    "outtime": "2124-11-25 20:00:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22026156,
+    "transfer_id": 36320965,
+    "eventtype": "admit",
+    "careunit": "Surgery/Pancreatic/Biliary/Bariatric",
+    "intime": "2124-11-25 20:00:00",
+    "outtime": "2124-11-26 18:15:53"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25946513,
+    "transfer_id": 39015103,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2124-11-27 11:09:00",
+    "outtime": "2124-11-27 16:48:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25946513,
+    "transfer_id": 37110345,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2124-11-27 16:48:00",
+    "outtime": "2124-12-06 14:56:37"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28345456,
+    "transfer_id": 39334356,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-01-18 12:15:00",
+    "outtime": "2125-01-18 17:43:02"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28345456,
+    "transfer_id": 34520571,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2125-01-18 17:43:02",
+    "outtime": "2125-01-18 18:21:02"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28345456,
+    "transfer_id": 37265094,
+    "eventtype": "transfer",
+    "careunit": "Emergency Department Observation",
+    "intime": "2125-01-18 18:21:02",
+    "outtime": "2125-01-18 22:54:18"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28345456,
+    "transfer_id": 32345734,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2125-01-18 22:54:18",
+    "outtime": "2125-01-22 17:43:47"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24349344,
+    "transfer_id": 37322401,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-01-23 13:34:00",
+    "outtime": "2125-01-23 17:55:22"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24349344,
+    "transfer_id": 33265392,
+    "eventtype": "admit",
+    "careunit": "Med/Surg/GYN",
+    "intime": "2125-01-23 17:55:22",
+    "outtime": "2125-01-23 18:11:33"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24349344,
+    "transfer_id": 35153016,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg/GYN",
+    "intime": "2125-01-23 18:11:33",
+    "outtime": "2125-01-23 18:12:49"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24349344,
+    "transfer_id": 36045847,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2125-01-23 18:12:49",
+    "outtime": "2125-01-28 15:20:52"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21089144,
+    "transfer_id": 35148796,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-02-01 12:45:00",
+    "outtime": "2125-02-01 19:42:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21089144,
+    "transfer_id": 36434992,
+    "eventtype": "admit",
+    "careunit": "Medical Intensive Care Unit (MICU)",
+    "intime": "2125-02-01 19:42:00",
+    "outtime": "2125-02-04 19:58:54"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21089144,
+    "transfer_id": 30946153,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2125-02-04 19:58:54",
+    "outtime": "2125-02-05 17:36:17"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21753962,
+    "transfer_id": 39274507,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-02-09 10:18:00",
+    "outtime": "2125-02-09 18:29:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21753962,
+    "transfer_id": 33620906,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2125-02-09 18:29:00",
+    "outtime": "2125-02-11 16:04:22"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25419860,
+    "transfer_id": 30987122,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-02-15 21:33:00",
+    "outtime": "2125-02-16 01:03:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25419860,
+    "transfer_id": 30169050,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2125-02-16 01:03:00",
+    "outtime": "2125-02-17 11:53:44"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28592711,
+    "transfer_id": 32132247,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-04-15 13:34:00",
+    "outtime": "2125-04-15 19:41:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28592711,
+    "transfer_id": 33462515,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2125-04-15 19:41:00",
+    "outtime": "2125-04-19 14:28:01"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26765088,
+    "transfer_id": 35213391,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-04-22 10:09:00",
+    "outtime": "2125-04-22 22:23:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26765088,
+    "transfer_id": 37747304,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-04-22 22:23:00",
+    "outtime": "2125-04-23 00:36:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26765088,
+    "transfer_id": 36191636,
+    "eventtype": "admit",
+    "careunit": "Transplant",
+    "intime": "2125-04-23 00:36:00",
+    "outtime": "2125-04-24 16:22:53"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28500488,
+    "transfer_id": 35614758,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-04-30 10:23:00",
+    "outtime": "2125-04-30 15:25:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28500488,
+    "transfer_id": 30798860,
+    "eventtype": "admit",
+    "careunit": "Hematology/Oncology",
+    "intime": "2125-04-30 15:25:00",
+    "outtime": "2125-04-30 15:58:25"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28500488,
+    "transfer_id": 30559743,
+    "eventtype": "transfer",
+    "careunit": "Hematology/Oncology",
+    "intime": "2125-04-30 15:58:25",
+    "outtime": "2125-05-02 08:05:43"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28500488,
+    "transfer_id": 32295135,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2125-05-02 08:05:43",
+    "outtime": "2125-05-03 16:11:26"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25353544,
+    "transfer_id": 30617014,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-05-27 10:05:00",
+    "outtime": "2125-05-27 16:47:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25353544,
+    "transfer_id": 35620564,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2125-05-27 16:47:00",
+    "outtime": "2125-05-29 14:56:37"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24351875,
+    "transfer_id": 34581667,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-06-07 17:07:00",
+    "outtime": "2125-06-08 03:30:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24351875,
+    "transfer_id": 31692463,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2125-06-08 03:30:00",
+    "outtime": "2125-06-09 15:29:29"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21757622,
+    "transfer_id": 39770970,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-06-15 12:05:00",
+    "outtime": "2125-06-15 14:49:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21757622,
+    "transfer_id": 35716531,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2125-06-15 14:49:00",
+    "outtime": "2125-06-15 15:16:31"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21757622,
+    "transfer_id": 31475073,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2125-06-15 15:16:31",
+    "outtime": "2125-06-16 14:59:04"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24768294,
+    "transfer_id": 37393239,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-06-20 06:25:00",
+    "outtime": "2125-06-20 09:50:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24768294,
+    "transfer_id": 31837393,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2125-06-20 09:50:00",
+    "outtime": "2125-06-23 11:59:08"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20091005,
+    "transfer_id": 34370063,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-06-24 11:45:00",
+    "outtime": "2125-06-24 15:26:11"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20091005,
+    "transfer_id": 36611837,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2125-06-24 15:26:11",
+    "outtime": "2125-06-24 15:49:47"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20091005,
+    "transfer_id": 39835656,
+    "eventtype": "transfer",
+    "careunit": "Emergency Department Observation",
+    "intime": "2125-06-24 15:49:47",
+    "outtime": "2125-06-24 15:51:34"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20091005,
+    "transfer_id": 34237113,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2125-06-24 15:51:34",
+    "outtime": "2125-06-25 15:12:08"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26740478,
+    "transfer_id": 33358499,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-07-12 08:29:00",
+    "outtime": "2125-07-12 15:50:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26740478,
+    "transfer_id": 39165537,
+    "eventtype": "admit",
+    "careunit": "Emergency Department Observation",
+    "intime": "2125-07-12 15:50:00",
+    "outtime": "2125-07-12 15:56:34"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23684591,
+    "transfer_id": 30569654,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-07-28 17:54:00",
+    "outtime": "2125-07-29 01:25:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23684591,
+    "transfer_id": 34561357,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2125-07-29 01:25:00",
+    "outtime": "2125-07-30 14:59:49"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28363812,
+    "transfer_id": 35323161,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-08-01 23:35:00",
+    "outtime": "2125-08-02 07:11:01"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28363812,
+    "transfer_id": 33854475,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2125-08-02 07:11:01",
+    "outtime": "2125-08-02 08:32:05"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28363812,
+    "transfer_id": 31284845,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2125-08-02 08:32:05",
+    "outtime": "2125-08-02 20:02:21"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28363812,
+    "transfer_id": 34799599,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2125-08-02 20:02:21",
+    "outtime": "2125-08-06 11:08:28"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21521734,
+    "transfer_id": 36967840,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-08-23 07:56:00",
+    "outtime": "2125-08-23 14:38:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21521734,
+    "transfer_id": 37932931,
+    "eventtype": "admit",
+    "careunit": "Medical/Surgical Intensive Care Unit (MICU/SICU)",
+    "intime": "2125-08-23 14:38:00",
+    "outtime": "2125-08-25 21:49:22"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21521734,
+    "transfer_id": 38393241,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2125-08-25 21:49:22",
+    "outtime": "2125-08-27 14:41:42"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24947511,
+    "transfer_id": 37196601,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-09-09 16:47:00",
+    "outtime": "2125-09-10 03:01:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24947511,
+    "transfer_id": 32868375,
+    "eventtype": "admit",
+    "careunit": "Medical Intensive Care Unit (MICU)",
+    "intime": "2125-09-10 03:01:00",
+    "outtime": "2125-09-11 18:13:36"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24947511,
+    "transfer_id": 35658378,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2125-09-11 18:13:36",
+    "outtime": "2125-09-12 18:07:45"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23485326,
+    "transfer_id": 31166890,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-10-25 18:48:00",
+    "outtime": "2125-10-25 21:53:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23485326,
+    "transfer_id": 31767551,
+    "eventtype": "admit",
+    "careunit": "Medical Intensive Care Unit (MICU)",
+    "intime": "2125-10-25 21:53:00",
+    "outtime": "2125-10-28 15:28:15"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23485326,
+    "transfer_id": 36665811,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2125-10-28 15:28:15",
+    "outtime": "2125-10-31 20:46:59"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24207435,
+    "transfer_id": 35129592,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-11-01 18:54:00",
+    "outtime": "2125-11-02 00:36:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24207435,
+    "transfer_id": 33625959,
+    "eventtype": "admit",
+    "careunit": "Medical Intensive Care Unit (MICU)",
+    "intime": "2125-11-02 00:36:00",
+    "outtime": "2125-11-02 22:14:11"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24207435,
+    "transfer_id": 33971547,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2125-11-02 22:14:11",
+    "outtime": "2125-11-03 13:21:54"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26542902,
+    "transfer_id": 38972546,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2125-11-05 10:07:00",
+    "outtime": "2125-11-05 15:09:38"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26542902,
+    "transfer_id": 33385762,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2125-11-05 15:09:38",
+    "outtime": "2125-11-05 16:13:03"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26542902,
+    "transfer_id": 30974592,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2125-11-05 16:13:03",
+    "outtime": "2125-11-05 16:13:27"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26542902,
+    "transfer_id": 34045621,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2125-11-05 16:13:27",
+    "outtime": "2125-11-05 17:17:14"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26542902,
+    "transfer_id": 34936726,
+    "eventtype": "transfer",
+    "careunit": "Emergency Department Observation",
+    "intime": "2125-11-05 17:17:14",
+    "outtime": "2125-11-05 20:49:39"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26542902,
+    "transfer_id": 30134446,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2125-11-05 20:49:39",
+    "outtime": "2125-11-05 21:01:32"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26542902,
+    "transfer_id": 36836086,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2125-11-05 21:01:32",
+    "outtime": "2125-11-07 16:15:12"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28290606,
+    "transfer_id": 35225920,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2126-03-03 16:10:00",
+    "outtime": "2126-03-03 23:38:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28290606,
+    "transfer_id": 38470732,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2126-03-03 23:38:00",
+    "outtime": "2126-03-04 00:58:55"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28290606,
+    "transfer_id": 38938688,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2126-03-04 00:58:55",
+    "outtime": "2126-03-09 18:41:09"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 27600054,
+    "transfer_id": 34787741,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2126-05-02 10:25:00",
+    "outtime": "2126-05-02 16:55:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 27600054,
+    "transfer_id": 36657944,
+    "eventtype": "admit",
+    "careunit": "Medical Intensive Care Unit (MICU)",
+    "intime": "2126-05-02 16:55:00",
+    "outtime": "2126-05-03 17:12:18"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 27600054,
+    "transfer_id": 34648234,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2126-05-03 17:12:18",
+    "outtime": "2126-05-06 17:11:29"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20019897,
+    "transfer_id": 35824695,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2126-07-11 19:38:00",
+    "outtime": "2126-07-12 02:55:25"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20019897,
+    "transfer_id": 35323655,
+    "eventtype": "admit",
+    "careunit": "Emergency Department Observation",
+    "intime": "2126-07-12 02:55:25",
+    "outtime": "2126-07-12 06:46:53"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21533137,
+    "transfer_id": 30081182,
+    "eventtype": "admit",
+    "careunit": "Psychiatry",
+    "intime": "2126-07-12 09:04:00",
+    "outtime": "2126-07-12 15:54:39"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21533137,
+    "transfer_id": 38934663,
+    "eventtype": "transfer",
+    "careunit": "Psychiatry",
+    "intime": "2126-07-12 15:54:39",
+    "outtime": "2126-07-18 15:38:21"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20345164,
+    "transfer_id": 32588482,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2126-08-15 07:54:00",
+    "outtime": "2126-08-15 12:26:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20345164,
+    "transfer_id": 38717933,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2126-08-15 12:26:00",
+    "outtime": "2126-08-18 15:46:44"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25731211,
+    "transfer_id": 37820594,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2126-08-20 19:19:00",
+    "outtime": "2126-08-21 00:50:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25731211,
+    "transfer_id": 33459135,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2126-08-21 00:50:00",
+    "outtime": "2126-08-22 18:22:14"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22372968,
+    "transfer_id": 39457253,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2126-09-08 18:41:00",
+    "outtime": "2126-09-08 22:06:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22372968,
+    "transfer_id": 34128173,
+    "eventtype": "admit",
+    "careunit": "Medical/Surgical Intensive Care Unit (MICU/SICU)",
+    "intime": "2126-09-08 22:06:00",
+    "outtime": "2126-09-10 14:55:44"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22372968,
+    "transfer_id": 32098379,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2126-09-10 14:55:44",
+    "outtime": "2126-09-11 12:38:25"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24877859,
+    "transfer_id": 37338127,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2126-10-24 12:34:00",
+    "outtime": "2126-10-24 19:00:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24877859,
+    "transfer_id": 36812375,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2126-10-24 19:00:00",
+    "outtime": "2126-10-27 16:24:08"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26887999,
+    "transfer_id": 36322577,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2126-11-21 12:38:00",
+    "outtime": "2126-11-21 22:48:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26887999,
+    "transfer_id": 39898078,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2126-11-21 22:48:00",
+    "outtime": "2126-11-25 14:24:04"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21022624,
+    "transfer_id": 36229840,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2126-11-28 12:01:00",
+    "outtime": "2126-11-28 21:00:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21022624,
+    "transfer_id": 38402326,
+    "eventtype": "admit",
+    "careunit": "Emergency Department Observation",
+    "intime": "2126-11-28 21:00:00",
+    "outtime": "2126-11-28 21:03:01"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26162472,
+    "transfer_id": 37801324,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-01-14 04:08:00",
+    "outtime": "2127-01-14 15:35:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26162472,
+    "transfer_id": 36980842,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2127-01-14 15:35:00",
+    "outtime": "2127-01-18 13:53:46"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23859640,
+    "transfer_id": 39597678,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-02-19 11:32:00",
+    "outtime": "2127-02-19 18:27:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23859640,
+    "transfer_id": 36809567,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2127-02-19 18:27:00",
+    "outtime": "2127-02-19 18:32:35"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23859640,
+    "transfer_id": 38839937,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2127-02-19 18:32:35",
+    "outtime": "2127-02-21 12:48:29"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23696091,
+    "transfer_id": 36583042,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-03-12 17:04:00",
+    "outtime": "2127-03-13 02:16:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23696091,
+    "transfer_id": 35495811,
+    "eventtype": "admit",
+    "careunit": "Med/Surg/GYN",
+    "intime": "2127-03-13 02:16:00",
+    "outtime": "2127-03-14 19:01:58"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24237487,
+    "transfer_id": 32997492,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-03-23 18:59:00",
+    "outtime": "2127-03-24 04:04:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24237487,
+    "transfer_id": 36624434,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2127-03-24 04:04:00",
+    "outtime": "2127-03-25 19:28:24"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25571675,
+    "transfer_id": 32187987,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-04-02 12:21:00",
+    "outtime": "2127-04-02 19:06:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25571675,
+    "transfer_id": 38182306,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2127-04-02 19:06:00",
+    "outtime": "2127-04-04 13:42:22"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24640222,
+    "transfer_id": 33398783,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-04-05 11:37:00",
+    "outtime": "2127-04-05 15:47:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24640222,
+    "transfer_id": 33745309,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2127-04-05 15:47:00",
+    "outtime": "2127-04-08 23:36:20"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24640222,
+    "transfer_id": 30543511,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2127-04-08 23:36:20",
+    "outtime": "2127-04-09 16:16:09"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28116050,
+    "transfer_id": 33350321,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-05-19 11:58:00",
+    "outtime": "2127-05-19 15:45:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28116050,
+    "transfer_id": 35610407,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2127-05-19 15:45:00",
+    "outtime": "2127-05-20 14:19:46"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28696865,
+    "transfer_id": 36751857,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-05-21 09:33:00",
+    "outtime": "2127-05-21 17:29:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28696865,
+    "transfer_id": 38020753,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2127-05-21 17:29:00",
+    "outtime": "2127-05-26 15:29:18"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22232071,
+    "transfer_id": 30054568,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-06-20 08:06:00",
+    "outtime": "2127-06-20 13:05:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22232071,
+    "transfer_id": 33372081,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2127-06-20 13:05:00",
+    "outtime": "2127-06-21 15:57:21"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 27724830,
+    "transfer_id": 35718670,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-07-31 08:10:00",
+    "outtime": "2127-07-31 10:43:54"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 27724830,
+    "transfer_id": 32021927,
+    "eventtype": "admit",
+    "careunit": "Medical/Surgical Intensive Care Unit (MICU/SICU)",
+    "intime": "2127-07-31 10:43:54",
+    "outtime": "2127-07-31 11:56:03"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 27724830,
+    "transfer_id": 30220975,
+    "eventtype": "transfer",
+    "careunit": "Medical/Surgical Intensive Care Unit (MICU/SICU)",
+    "intime": "2127-07-31 11:56:03",
+    "outtime": "2127-08-03 01:49:12"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 27724830,
+    "transfer_id": 33599342,
+    "eventtype": "transfer",
+    "careunit": "Hematology/Oncology",
+    "intime": "2127-08-03 01:49:12",
+    "outtime": "2127-08-04 13:16:32"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20920353,
+    "transfer_id": 33131766,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-09-01 14:45:00",
+    "outtime": "2127-09-01 20:26:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20920353,
+    "transfer_id": 38675743,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2127-09-01 20:26:00",
+    "outtime": "2127-09-02 00:34:48"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20920353,
+    "transfer_id": 34799355,
+    "eventtype": "transfer",
+    "careunit": "Cardiac Vascular Intensive Care Unit (CVICU)",
+    "intime": "2127-09-02 00:34:48",
+    "outtime": "2127-09-02 07:58:17"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20920353,
+    "transfer_id": 38953204,
+    "eventtype": "transfer",
+    "careunit": "Cardiac Vascular Intensive Care Unit (CVICU)",
+    "intime": "2127-09-02 07:58:17",
+    "outtime": "2127-09-02 18:12:38"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20920353,
+    "transfer_id": 39687546,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2127-09-02 18:12:38",
+    "outtime": "2127-09-05 16:46:27"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23665708,
+    "transfer_id": 31113185,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-09-06 13:50:00",
+    "outtime": "2127-09-06 19:54:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23665708,
+    "transfer_id": 30883823,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2127-09-06 19:54:00",
+    "outtime": "2127-09-09 18:07:09"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26600891,
+    "transfer_id": 32155758,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-09-24 16:46:00",
+    "outtime": "2127-09-24 22:52:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26600891,
+    "transfer_id": 38715331,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2127-09-24 22:52:00",
+    "outtime": "2127-09-25 14:59:43"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26600891,
+    "transfer_id": 35203820,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2127-09-25 14:59:43",
+    "outtime": "2127-09-27 22:26:27"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26600891,
+    "transfer_id": 34784059,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2127-09-27 22:26:27",
+    "outtime": "2127-09-28 17:14:14"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20614944,
+    "transfer_id": 31851546,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-11-28 12:24:00",
+    "outtime": "2127-11-28 23:04:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20614944,
+    "transfer_id": 34511357,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2127-11-28 23:04:00",
+    "outtime": "2127-12-01 12:02:24"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26763148,
+    "transfer_id": 35621110,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2127-12-30 08:37:00",
+    "outtime": "2127-12-30 17:47:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26763148,
+    "transfer_id": 32532493,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2127-12-30 17:47:00",
+    "outtime": "2128-01-01 22:10:26"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26763148,
+    "transfer_id": 37434378,
+    "eventtype": "transfer",
+    "careunit": "Medical Intensive Care Unit (MICU)",
+    "intime": "2128-01-01 22:10:26",
+    "outtime": "2128-01-02 18:10:17"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26763148,
+    "transfer_id": 34511804,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2128-01-02 18:10:17",
+    "outtime": "2128-01-06 16:17:20"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28109448,
+    "transfer_id": 32032030,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-01-14 18:09:00",
+    "outtime": "2128-01-15 00:21:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28109448,
+    "transfer_id": 37180180,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2128-01-15 00:21:00",
+    "outtime": "2128-01-15 17:04:17"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22108471,
+    "transfer_id": 33704947,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-02-05 13:18:00",
+    "outtime": "2128-02-05 18:35:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22108471,
+    "transfer_id": 35746735,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2128-02-05 18:35:00",
+    "outtime": "2128-02-05 18:59:23"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22108471,
+    "transfer_id": 38376401,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2128-02-05 18:59:23",
+    "outtime": "2128-02-07 16:26:16"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28526628,
+    "transfer_id": 37847223,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-02-12 13:16:00",
+    "outtime": "2128-02-12 17:12:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28526628,
+    "transfer_id": 38769562,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2128-02-12 17:12:00",
+    "outtime": "2128-02-13 16:56:02"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25617754,
+    "transfer_id": 35464069,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-02-21 12:42:00",
+    "outtime": "2128-02-21 16:59:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25617754,
+    "transfer_id": 39943484,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2128-02-21 16:59:00",
+    "outtime": "2128-02-21 20:43:46"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25617754,
+    "transfer_id": 39470619,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2128-02-21 20:43:46",
+    "outtime": "2128-02-26 14:53:20"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22914694,
+    "transfer_id": 37047243,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-03-05 12:06:00",
+    "outtime": "2128-03-05 20:02:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22914694,
+    "transfer_id": 32026240,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2128-03-05 20:02:00",
+    "outtime": "2128-03-09 22:14:50"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29358537,
+    "transfer_id": 34437421,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-03-15 15:24:00",
+    "outtime": "2128-03-15 20:54:36"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29358537,
+    "transfer_id": 39406652,
+    "eventtype": "admit",
+    "careunit": "Med/Surg/Trauma",
+    "intime": "2128-03-15 20:54:36",
+    "outtime": "2128-03-15 21:21:52"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29358537,
+    "transfer_id": 33317587,
+    "eventtype": "transfer",
+    "careunit": "Discharge Lounge",
+    "intime": "2128-03-15 21:21:52",
+    "outtime": "2128-03-15 23:06:52"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29358537,
+    "transfer_id": 36692494,
+    "eventtype": "transfer",
+    "careunit": "PACU",
+    "intime": "2128-03-15 23:06:52",
+    "outtime": "2128-03-15 23:24:58"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29358537,
+    "transfer_id": 38802250,
+    "eventtype": "transfer",
+    "careunit": "Vascular",
+    "intime": "2128-03-15 23:24:58",
+    "outtime": "2128-03-25 18:34:01"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21735397,
+    "transfer_id": 30120446,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-04-12 01:58:00",
+    "outtime": "2128-04-12 07:49:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21735397,
+    "transfer_id": 36459477,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2128-04-12 07:49:00",
+    "outtime": "2128-04-13 14:38:23"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22900096,
+    "transfer_id": 30847529,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-04-20 04:08:00",
+    "outtime": "2128-04-20 06:48:20"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22900096,
+    "transfer_id": 36198746,
+    "eventtype": "admit",
+    "careunit": "Emergency Department Observation",
+    "intime": "2128-04-20 06:48:20",
+    "outtime": "2128-04-20 08:04:35"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22900096,
+    "transfer_id": 35882076,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2128-04-20 08:04:35",
+    "outtime": "2128-04-21 18:25:38"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24401627,
+    "transfer_id": 36634772,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-04-24 12:41:00",
+    "outtime": "2128-04-24 19:45:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24401627,
+    "transfer_id": 35497259,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2128-04-24 19:45:00",
+    "outtime": "2128-04-26 16:19:53"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26773312,
+    "transfer_id": 31070880,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-06-13 14:09:00",
+    "outtime": "2128-06-14 10:54:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 26773312,
+    "transfer_id": 32950315,
+    "eventtype": "admit",
+    "careunit": "Emergency Department Observation",
+    "intime": "2128-06-14 10:54:00",
+    "outtime": "2128-06-14 11:05:13"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29670705,
+    "transfer_id": 38221642,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-06-24 09:46:00",
+    "outtime": "2128-06-24 14:37:10"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29670705,
+    "transfer_id": 30453893,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2128-06-24 14:37:10",
+    "outtime": "2128-06-24 14:55:49"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29670705,
+    "transfer_id": 30414440,
+    "eventtype": "transfer",
+    "careunit": "Emergency Department Observation",
+    "intime": "2128-06-24 14:55:49",
+    "outtime": "2128-06-24 16:55:09"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29670705,
+    "transfer_id": 35212326,
+    "eventtype": "transfer",
+    "careunit": "Medical Intensive Care Unit (MICU)",
+    "intime": "2128-06-24 16:55:09",
+    "outtime": "2128-06-25 18:24:08"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29670705,
+    "transfer_id": 31729870,
+    "eventtype": "transfer",
+    "careunit": "Neurology",
+    "intime": "2128-06-25 18:24:08",
+    "outtime": "2128-06-25 18:25:05"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29670705,
+    "transfer_id": 30796541,
+    "eventtype": "transfer",
+    "careunit": "Neurology",
+    "intime": "2128-06-25 18:25:05",
+    "outtime": "2128-06-26 19:14:56"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20802321,
+    "transfer_id": 37943891,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-07-29 14:51:00",
+    "outtime": "2128-07-29 21:41:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20802321,
+    "transfer_id": 32646540,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2128-07-29 21:41:00",
+    "outtime": "2128-08-01 16:01:48"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24291274,
+    "transfer_id": 38140860,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-08-08 06:08:00",
+    "outtime": "2128-08-08 12:01:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 24291274,
+    "transfer_id": 33580151,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2128-08-08 12:01:00",
+    "outtime": "2128-08-10 17:48:20"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29209868,
+    "transfer_id": 35398780,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-08-27 06:48:00",
+    "outtime": "2128-08-27 15:32:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29209868,
+    "transfer_id": 34328075,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2128-08-27 15:32:00",
+    "outtime": "2128-08-28 15:59:48"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23094753,
+    "transfer_id": 36910275,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-09-04 14:26:00",
+    "outtime": "2128-09-04 17:17:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23094753,
+    "transfer_id": 33033900,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2128-09-04 17:17:00",
+    "outtime": "2128-09-04 19:09:39"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23094753,
+    "transfer_id": 34621914,
+    "eventtype": "transfer",
+    "careunit": "Discharge Lounge",
+    "intime": "2128-09-04 19:09:39",
+    "outtime": "2128-09-04 19:15:11"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23094753,
+    "transfer_id": 37796238,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2128-09-04 19:15:11",
+    "outtime": "2128-09-09 19:17:48"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25848593,
+    "transfer_id": 30481450,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-09-11 17:26:00",
+    "outtime": "2128-09-11 18:47:34"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25848593,
+    "transfer_id": 38222797,
+    "eventtype": "admit",
+    "careunit": "Surgical Intensive Care Unit (SICU)",
+    "intime": "2128-09-11 18:47:34",
+    "outtime": "2128-09-11 19:14:24"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25848593,
+    "transfer_id": 36264334,
+    "eventtype": "transfer",
+    "careunit": "Surgical Intensive Care Unit (SICU)",
+    "intime": "2128-09-11 19:14:24",
+    "outtime": "2128-09-13 23:01:04"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25848593,
+    "transfer_id": 33622843,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2128-09-13 23:01:04",
+    "outtime": "2128-09-16 14:33:11"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21598972,
+    "transfer_id": 32994804,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-09-21 19:35:00",
+    "outtime": "2128-09-22 01:20:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21598972,
+    "transfer_id": 31146911,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2128-09-22 01:20:00",
+    "outtime": "2128-09-23 15:48:37"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20194759,
+    "transfer_id": 35392187,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-09-24 15:34:00",
+    "outtime": "2128-09-24 21:53:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 20194759,
+    "transfer_id": 31981204,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2128-09-24 21:53:00",
+    "outtime": "2128-09-26 15:49:57"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21607535,
+    "transfer_id": 39065892,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-09-30 09:26:00",
+    "outtime": "2128-09-30 14:37:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21607535,
+    "transfer_id": 33028574,
+    "eventtype": "admit",
+    "careunit": "Medical/Surgical Intensive Care Unit (MICU/SICU)",
+    "intime": "2128-09-30 14:37:00",
+    "outtime": "2128-10-03 18:35:22"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21607535,
+    "transfer_id": 30887639,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2128-10-03 18:35:22",
+    "outtime": "2128-10-04 19:08:26"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23411823,
+    "transfer_id": 31096930,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-10-20 10:23:00",
+    "outtime": "2128-10-20 15:49:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23411823,
+    "transfer_id": 34535773,
+    "eventtype": "admit",
+    "careunit": "Medical Intensive Care Unit (MICU)",
+    "intime": "2128-10-20 15:49:00",
+    "outtime": "2128-10-21 22:17:09"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23411823,
+    "transfer_id": 34496934,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2128-10-21 22:17:09",
+    "outtime": "2128-10-24 17:31:10"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23113691,
+    "transfer_id": 31766453,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-11-03 07:26:00",
+    "outtime": "2128-11-03 19:21:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 23113691,
+    "transfer_id": 33757869,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2128-11-03 19:21:00",
+    "outtime": "2128-11-07 20:30:11"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25609062,
+    "transfer_id": 34503349,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-11-22 20:53:00",
+    "outtime": "2128-11-23 01:01:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25609062,
+    "transfer_id": 34992258,
+    "eventtype": "admit",
+    "careunit": "Medical Intensive Care Unit (MICU)",
+    "intime": "2128-11-23 01:01:00",
+    "outtime": "2128-11-24 20:55:57"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25609062,
+    "transfer_id": 39323022,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2128-11-24 20:55:57",
+    "outtime": "2128-11-28 19:21:05"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29896673,
+    "transfer_id": 31796732,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-12-17 09:41:00",
+    "outtime": "2128-12-17 17:02:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29896673,
+    "transfer_id": 35866953,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2128-12-17 17:02:00",
+    "outtime": "2128-12-19 18:24:42"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28829035,
+    "transfer_id": 30574932,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2128-12-24 05:26:00",
+    "outtime": "2128-12-24 13:49:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28829035,
+    "transfer_id": 39827227,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2128-12-24 13:49:00",
+    "outtime": "2128-12-25 12:08:28"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28829035,
+    "transfer_id": 37468607,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2128-12-25 12:08:28",
+    "outtime": "2128-12-27 17:32:58"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28829035,
+    "transfer_id": 31719657,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2128-12-27 17:32:58",
+    "outtime": "2129-01-03 17:03:19"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29353174,
+    "transfer_id": 37810197,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2129-01-13 15:10:00",
+    "outtime": "2129-01-13 18:14:48"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29353174,
+    "transfer_id": 34045561,
+    "eventtype": "admit",
+    "careunit": "Transplant",
+    "intime": "2129-01-13 18:14:48",
+    "outtime": "2129-01-13 20:04:34"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29353174,
+    "transfer_id": 39380702,
+    "eventtype": "transfer",
+    "careunit": "Discharge Lounge",
+    "intime": "2129-01-13 20:04:34",
+    "outtime": "2129-01-13 22:02:11"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29353174,
+    "transfer_id": 39854751,
+    "eventtype": "transfer",
+    "careunit": "PACU",
+    "intime": "2129-01-13 22:02:11",
+    "outtime": "2129-01-13 22:09:51"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29353174,
+    "transfer_id": 32316191,
+    "eventtype": "transfer",
+    "careunit": "Discharge Lounge",
+    "intime": "2129-01-13 22:09:51",
+    "outtime": "2129-01-13 23:48:42"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 29353174,
+    "transfer_id": 37394915,
+    "eventtype": "transfer",
+    "careunit": "Vascular",
+    "intime": "2129-01-13 23:48:42",
+    "outtime": "2129-01-15 19:11:33"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21188343,
+    "transfer_id": 39663933,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2129-01-17 01:13:00",
+    "outtime": "2129-01-17 06:20:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21188343,
+    "transfer_id": 34724402,
+    "eventtype": "admit",
+    "careunit": "Medical Intensive Care Unit (MICU)",
+    "intime": "2129-01-17 06:20:00",
+    "outtime": "2129-01-18 18:33:53"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21188343,
+    "transfer_id": 31563605,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2129-01-18 18:33:53",
+    "outtime": "2129-01-18 19:06:17"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21188343,
+    "transfer_id": 35733839,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2129-01-18 19:06:17",
+    "outtime": "2129-01-18 19:10:31"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21188343,
+    "transfer_id": 30809186,
+    "eventtype": "transfer",
+    "careunit": "Med/Surg",
+    "intime": "2129-01-18 19:10:31",
+    "outtime": "2129-01-20 19:50:33"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22691810,
+    "transfer_id": 37688451,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2129-01-24 06:40:00",
+    "outtime": "2129-01-24 13:19:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22691810,
+    "transfer_id": 32686963,
+    "eventtype": "admit",
+    "careunit": "Medicine",
+    "intime": "2129-01-24 13:19:00",
+    "outtime": "2129-01-24 16:27:45"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22691810,
+    "transfer_id": 32511544,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2129-01-24 16:27:45",
+    "outtime": "2129-01-25 14:43:27"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 22691810,
+    "transfer_id": 30279905,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2129-01-25 14:43:27",
+    "outtime": "2129-01-29 16:35:11"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25603478,
+    "transfer_id": 30611588,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2129-02-27 17:15:00",
+    "outtime": "2129-02-27 23:48:00"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25603478,
+    "transfer_id": 35246445,
+    "eventtype": "admit",
+    "careunit": "Vascular",
+    "intime": "2129-02-27 23:48:00",
+    "outtime": "2129-03-04 20:16:30"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25603478,
+    "transfer_id": 30880792,
+    "eventtype": "transfer",
+    "careunit": "Vascular",
+    "intime": "2129-03-04 20:16:30",
+    "outtime": "2129-03-06 17:47:06"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 25603478,
+    "transfer_id": 30960800,
+    "eventtype": "transfer",
+    "careunit": "Vascular",
+    "intime": "2129-03-06 17:47:06",
+    "outtime": "2129-03-06 18:11:20"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21500424,
+    "transfer_id": 35407818,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2129-03-11 09:03:00",
+    "outtime": "2129-03-11 13:11:02"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21500424,
+    "transfer_id": 37802565,
+    "eventtype": "admit",
+    "careunit": "Discharge Lounge",
+    "intime": "2129-03-11 13:11:02",
+    "outtime": "2129-03-11 19:15:43"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 21500424,
+    "transfer_id": 30239230,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2129-03-11 19:15:43",
+    "outtime": "2129-03-12 14:49:27"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28431082,
+    "transfer_id": 37707665,
+    "eventtype": "ED",
+    "careunit": "Emergency Department",
+    "intime": "2129-03-17 12:46:00",
+    "outtime": "2129-03-17 19:13:05"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28431082,
+    "transfer_id": 33811827,
+    "eventtype": "admit",
+    "careunit": "Med/Surg",
+    "intime": "2129-03-17 19:13:05",
+    "outtime": "2129-03-17 19:16:33"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28431082,
+    "transfer_id": 31967900,
+    "eventtype": "transfer",
+    "careunit": "Discharge Lounge",
+    "intime": "2129-03-17 19:16:33",
+    "outtime": "2129-03-17 19:43:03"
+  },
+  {
+    "subject_id": 17517983,
+    "hadm_id": 28431082,
+    "transfer_id": 37995874,
+    "eventtype": "transfer",
+    "careunit": "Medicine",
+    "intime": "2129-03-17 19:43:03",
+    "outtime": "2129-03-21 17:50:09"
+  }
+]
