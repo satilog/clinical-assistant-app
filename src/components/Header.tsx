@@ -35,7 +35,7 @@ export default function Header(props: any) {
       >
         <div
           className="custom-text-color text-2xl font-bold cursor-pointer"
-          onClick={() => router.push("/landing")}
+          onClick={() => router.push("/dashboard")}
         >
             MIMIC IV APP
         </div>

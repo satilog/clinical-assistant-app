@@ -12,7 +12,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import AdmissionLocations from '@/partials/dashboard/AdmissionLocations';
+import BarChart from "@/partials/dashboard/BarChart";
+import ICUPatientList from "@/partials/dashboard/ICUPatientList";
 
 // import { CalendarDateRangePicker } from "@/components/components/date-range-picker";
 // import { MainNav } from "@/components/components/main-nav";
@@ -139,41 +140,52 @@ export default function DashboardPartial() {
             </Card>
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-            <Card className="col-span-4">
-              <CardHeader>
-                <CardTitle>Admission Locations</CardTitle>
-              </CardHeader>
-              <CardContent className="pl-2">
-                    <AdmissionLocations />
+            <Card className="col-span-4 p-4">
+              <Tabs defaultValue={"admin_loc"} className="space-y-4">
+                <TabsList>
+                  <TabsTrigger value="admin_loc">
+                    Admission Locations
+                  </TabsTrigger>
+                  <TabsTrigger value="diagnosed_codes">
+                    Diagnosed Codes
+                  </TabsTrigger>
+                  <TabsTrigger value="care_units">Care Units</TabsTrigger>
+                </TabsList>
+                <TabsContent value="admin_loc" className="space-y-4">
+                  <CardContent className="pl-2">
+                    <BarChart
+                      pathName="/admission_locations"
+                      fieldName="admission_location"
+                    />
                   </CardContent>
+                </TabsContent>
+                <TabsContent value="diagnosed_codes" className="space-y-4">
+                  <CardContent className="pl-2">
+                    <BarChart
+                      pathName="/diagnosed_codes?limit=10"
+                      fieldName="long_title"
+                    />
+                  </CardContent>
+                </TabsContent>
+                <TabsContent value="care_units" className="space-y-4">
+                  <CardContent className="pl-2">
+                    <BarChart
+                      pathName="/care_units?limit=10"
+                      fieldName="careunit"
+                    />
+                  </CardContent>
+                </TabsContent>
+              </Tabs>
             </Card>
             <Card className="col-span-3">
               <CardHeader>
-                <CardTitle>Recent Sales</CardTitle>
-                <CardDescription>
-                  You made 265 sales this month.
-                </CardDescription>
+                <CardTitle>ICU Patients</CardTitle>
               </CardHeader>
-              <CardContent>{/* <RecentSales />  */}</CardContent>
+              <div className="h-[calc(7*4rem)] overflow-y-auto">
+                <ICUPatientList />
+              </div>
             </Card>
           </div>
-          {/* <Tabs defaultValue="overview" className="space-y-4">
-            <TabsList>
-              <TabsTrigger value="overview">Overview</TabsTrigger>
-              <TabsTrigger value="analytics" disabled>
-                Analytics
-              </TabsTrigger>
-              <TabsTrigger value="reports" disabled>
-                Reports
-              </TabsTrigger>
-              <TabsTrigger value="notifications" disabled>
-                Notifications
-              </TabsTrigger>
-            </TabsList>
-            <TabsContent value="overview" className="space-y-4">
-              
-            </TabsContent>
-          </Tabs> */}
         </div>
       </div>
     </div>
