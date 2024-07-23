@@ -10,8 +10,7 @@ build:
       dockerfile: Dockerfile
 manifests:
   rawYaml:
-    - kubernetes/clinical-assistant-app.yaml
-    - kubernetes/ingress.yaml  # Include the Ingress configuration if managed here
+    - kubernetes/*
 deploy:
   kubectl: {}
   logs:
