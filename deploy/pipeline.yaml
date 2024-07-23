@@ -5,5 +5,5 @@ metadata:
 description: Delivery pipeline for the Clinical Assistant application
 serialPipeline:
   stages:
-  - targetId: prod-clinical-assistant-app
+  - targetId: prod-ca-app
 
