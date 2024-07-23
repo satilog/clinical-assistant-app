@@ -20,7 +20,7 @@ export default function ICUPatientList() {
   const [patients, setPatients] = useState<PatientRecord[]>([]);
 
   useEffect(() => {
-    fetch("http://34.172.105.113/icu_patients")
+    fetch(process.env.NEXT_PUBLIC_API_URL + `/icu_patients`)
       .then((response) => response.json())
       .then((data) => {
         setPatients(data);
