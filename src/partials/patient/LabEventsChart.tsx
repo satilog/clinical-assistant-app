@@ -27,15 +27,7 @@ import dayjs from "dayjs";
 const CustomDot = (props) => {
   const { cx, cy, value } = props;
 
-  return (
-    <circle
-      cx={cx}
-      cy={cy}
-      r={3}
-      stroke="1.5"
-      fill="white"
-    />
-  );
+  return <circle cx={cx} cy={cy} r={3} stroke="1.5" fill="white" />;
 };
 
 export default function LabEventsChart({ id }: { id: any }) {
