@@ -71,7 +71,7 @@ export default function PatientDetail() {
               <CardTitle>Patient Details</CardTitle>
             </CardHeader>
             <CardContent className="min-h-[calc((100vh-25em)/2)] max-h-[calc((100vh-25em)/2)] overflow-y-auto">
-              <table className="text-xs min-w-full border-collapse border border-gray-200">
+              <table className="text-sm min-w-full border-collapse border border-gray-200">
                 <tbody>
                   <tr className="border-t border-gray-200">
                     <td className="px-4 py-2 font-bold">Patient ID:</td>

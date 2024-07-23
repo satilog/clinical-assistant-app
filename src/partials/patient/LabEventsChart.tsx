@@ -9,6 +9,8 @@ import {
   YAxis,
   Tooltip,
   ReferenceLine,
+  ReferenceArea,
+  CartesianGrid,
 } from "recharts";
 import {
   Select,
@@ -21,6 +23,20 @@ import {
 } from "@/components/ui/select";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import dayjs from "dayjs";
+
+const CustomDot = (props) => {
+  const { cx, cy, value } = props;
+
+  return (
+    <circle
+      cx={cx}
+      cy={cy}
+      r={3}
+      stroke="1.5"
+      fill="white"
+    />
+  );
+};
 
 export default function LabEventsChart({ id }: { id: any }) {
   const [data, setData] = useState([]);
@@ -42,6 +58,7 @@ export default function LabEventsChart({ id }: { id: any }) {
           ...new Set(data.map((item: any) => item.label)),
         ];
         setLabels(uniqueLabels);
+        setSelectedLabel(uniqueLabels[0]);
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, [id]);
@@ -62,6 +79,13 @@ export default function LabEventsChart({ id }: { id: any }) {
       }
     }
   }, [selectedLabel, data]);
+
+  const getYAxisDomain = () => {
+    const values = filteredData.map((item) => item.valuenum);
+    const min = Math.min(...values, refRange.lower);
+    const max = Math.max(...values, refRange.upper);
+    return [min, max];
+  };
 
   return (
     <Card className="w-full h-full bg-white shadow-md rounded-lg">
@@ -113,7 +137,9 @@ export default function LabEventsChart({ id }: { id: any }) {
                 fontSize={12}
                 tickLine={false}
                 axisLine={false}
+                domain={getYAxisDomain()}
               />
+              <CartesianGrid strokeDasharray="3 3" />
               <Tooltip
                 cursor={{ fill: "rgba(255, 255, 255, 0.2)" }}
                 formatter={(value) => [value, "Value"]}
@@ -123,19 +149,27 @@ export default function LabEventsChart({ id }: { id: any }) {
               />
               <ReferenceLine
                 y={refRange.lower}
-                stroke="red"
+                stroke="green"
                 strokeDasharray="3 3"
               />
               <ReferenceLine
                 y={refRange.upper}
-                stroke="red"
+                stroke="green"
                 strokeDasharray="3 3"
+              />
+              <ReferenceArea
+                y1={refRange.lower}
+                y2={refRange.upper}
+                fill="green"
+                fillOpacity={0.1}
               />
               <Line
                 type="monotone"
                 dataKey="valuenum"
                 stroke="currentColor"
                 className="stroke-primary"
+                strokeWidth="1.5"
+                dot={<CustomDot />}
               />
             </LineChart>
           </ResponsiveContainer>
