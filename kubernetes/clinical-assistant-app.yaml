@@ -18,7 +18,12 @@ spec:
         image: us-central1-docker.pkg.dev/clinical-assistant-429217/clinical-assistant/clinical-assistant-app:latest
         ports:
         - containerPort: 3000
-
+        env:
+        - name: NEXT_PUBLIC_API_URL
+          valueFrom:
+            configMapKeyRef:
+              name: clinical-assistant-config
+              key: NEXT_PUBLIC_API_URL
 ---
 apiVersion: v1
 kind: Service
