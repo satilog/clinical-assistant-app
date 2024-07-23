@@ -62,12 +62,11 @@ steps:
   args:
     - '-c'
     - |
-      if ! kubectl get managedcertificate clinical-assistant-cert -n prod-namespace; then
+      if ! kubectl get managedcertificate clinical-assistant-cert -n default; then
         kubectl apply -f kubernetes/managed-cert.yaml
       else
         echo "Managed Certificate already exists"
       fi
-
 
 # Step 8: Apply the HTTP-to-HTTPS FrontendConfig
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -99,7 +98,7 @@ steps:
   args:
     - '-c'
     - |
-      gcloud deploy releases create ca-app-release-$(date +%Y%m%d%H%M%S) \
+      gcloud deploy releases create ca-app-release-$(date +%Y%m%d-%H%M%S) \
       --project=clinical-assistant-429217 \
       --region=us-central1 \
       --delivery-pipeline=clinical-assistant-app-pipeline \
@@ -110,4 +109,4 @@ steps:
 images:
 - 'us-central1-docker.pkg.dev/clinical-assistant-429217/clinical-assistant/clinical-assistant-app:latest'
 
-timeout: '1200s' 
+timeout: '1200s'
