@@ -69,7 +69,19 @@ steps:
       fi
 
 
-# Step 8: Apply the static Ingress configuration
+# Step 8: Apply the HTTP-to-HTTPS FrontendConfig
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      if ! kubectl get frontendconfig http-to-https-config -n default; then
+        kubectl apply -f kubernetes/frontend-config.yaml
+      else
+        echo "FrontendConfig already exists"
+      fi
+      
+# Step 9: Apply the static Ingress configuration
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'bash'
   env:
@@ -81,7 +93,7 @@ steps:
     - |
       kubectl apply -f kubernetes/ingress.yaml
 
-# Step 9: Trigger Cloud Deploy for the new release
+# Step 10: Trigger Cloud Deploy for the new release
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
   args:
