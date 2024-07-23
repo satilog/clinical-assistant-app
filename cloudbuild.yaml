@@ -98,7 +98,7 @@ steps:
   args:
     - '-c'
     - |
-      gcloud deploy releases create caapp-release-$(date +%Y%m%d%H%M%S) \
+      gcloud deploy releases create c-$(date +%Y%m%d%H%M%S) \
       --project=clinical-assistant-429217 \
       --region=us-central1 \
       --delivery-pipeline=clinical-assistant-app-pipeline \
