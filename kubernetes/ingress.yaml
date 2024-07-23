@@ -4,11 +4,10 @@ metadata:
   name: main-ingress
   namespace: prod-namespace
   annotations:
-    kubernetes.io/ingress.class: "gce"
-    # networking.gke.io/managed-certificates: "fastapi-managed-cert"
+    kubernetes.io/ingress.class: "nginx"  
 spec:
   rules:
-  - host: 34.172.105.113.xip.io
+  - host: 35.244.206.182.xip.io  
     http:
       paths:
       - path: /api/*
@@ -25,4 +24,3 @@ spec:
             name: clinical-assistant-service
             port:
               number: 80
-
