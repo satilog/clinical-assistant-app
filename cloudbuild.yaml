@@ -101,7 +101,7 @@ steps:
       gcloud deploy releases create c-$(date +%Y%m%d%H%M%S) \
       --project=clinical-assistant-429217 \
       --region=us-central1 \
-      --delivery-pipeline=clinical-assistant-app-pipeline \
+      --delivery-pipeline=ca-app-pipeline \
       --images=clinical-assistant-container=us-central1-docker.pkg.dev/clinical-assistant-429217/clinical-assistant/clinical-assistant-app:latest \
       --annotations=commit-sha=$(git rev-parse HEAD) \
       --skaffold-file=skaffold.yaml
