@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: clinical-assistant-config
+  namespace: default
+data:
+  NEXT_PUBLIC_API_URL: "http://34.173.40.66"

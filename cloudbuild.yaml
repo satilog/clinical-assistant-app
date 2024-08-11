@@ -39,8 +39,16 @@ steps:
       gcloud container clusters get-credentials autopilot-ca --region us-central1 --project clinical-assistant-429217
       kubectl config view
       kubectl get nodes
+  
+# Step 6: Apply the ConfigMap for the Clinical Assistant app
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      kubectl apply -f kubernetes/configmap.yaml
 
-# Step 6: Apply the Kubernetes configuration for the Clinical Assistant app
+# Step 7: Apply the Kubernetes configuration for the Clinical Assistant app
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'bash'
   env:
@@ -52,47 +60,47 @@ steps:
     - |
       kubectl apply -f kubernetes/clinical-assistant-app.yaml
 
-# Step 7: Check and apply the Managed Certificate configuration
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  entrypoint: 'bash'
-  env:
-    - 'CLOUDSDK_CORE_PROJECT=clinical-assistant-429217'
-    - 'CLOUDSDK_COMPUTE_REGION=us-central1'
-    - 'CLOUDSDK_CONTAINER_CLUSTER=autopilot-ca'
-  args:
-    - '-c'
-    - |
-      if ! kubectl get managedcertificate clinical-assistant-cert -n default; then
-        kubectl apply -f kubernetes/managed-cert.yaml
-      else
-        echo "Managed Certificate already exists"
-      fi
+# Step 8: Check and apply the Managed Certificate configuration
+# - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+#   entrypoint: 'bash'
+#   env:
+#     - 'CLOUDSDK_CORE_PROJECT=clinical-assistant-429217'
+#     - 'CLOUDSDK_COMPUTE_REGION=us-central1'
+#     - 'CLOUDSDK_CONTAINER_CLUSTER=autopilot-ca'
+#   args:
+#     - '-c'
+#     - |
+#       if ! kubectl get managedcertificate clinical-assistant-cert -n default; then
+#         kubectl apply -f kubernetes/managed-cert.yaml
+#       else
+#         echo "Managed Certificate already exists"
+#       fi
 
-# Step 8: Apply the HTTP-to-HTTPS FrontendConfig
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  entrypoint: 'bash'
-  args:
-    - '-c'
-    - |
-      if ! kubectl get frontendconfig http-to-https-config -n default; then
-        kubectl apply -f kubernetes/frontend-config.yaml
-      else
-        echo "FrontendConfig already exists"
-      fi
+# Step 9: Apply the HTTP-to-HTTPS FrontendConfig
+# - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+#   entrypoint: 'bash'
+#   args:
+#     - '-c'
+#     - |
+#       if ! kubectl get frontendconfig http-to-https-config -n default; then
+#         kubectl apply -f kubernetes/frontend-config.yaml
+#       else
+#         echo "FrontendConfig already exists"
+#       fi
 
-# Step 9: Apply the static Ingress configuration
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  entrypoint: 'bash'
-  env:
-    - 'CLOUDSDK_CORE_PROJECT=clinical-assistant-429217'
-    - 'CLOUDSDK_COMPUTE_REGION=us-central1'
-    - 'CLOUDSDK_CONTAINER_CLUSTER=autopilot-ca'
-  args:
-    - '-c'
-    - |
-      kubectl apply -f kubernetes/ingress.yaml
+# Step 10: Apply the static Ingress configuration
+# - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+#   entrypoint: 'bash'
+#   env:
+#     - 'CLOUDSDK_CORE_PROJECT=clinical-assistant-429217'
+#     - 'CLOUDSDK_COMPUTE_REGION=us-central1'
+#     - 'CLOUDSDK_CONTAINER_CLUSTER=autopilot-ca'
+#   args:
+#     - '-c'
+#     - |
+#       kubectl apply -f kubernetes/ingress.yaml
 
-# Step 10: Trigger Cloud Deploy for the new release
+# Step 11: Trigger Cloud Deploy for the new release
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
   args:
