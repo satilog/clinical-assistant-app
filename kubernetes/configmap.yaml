@@ -4,4 +4,4 @@ metadata:
   name: clinical-assistant-config
   namespace: default
 data:
-  NEXT_PUBLIC_API_URL: "http://34.173.40.66"
+  NEXT_PUBLIC_API_URL: "http://34.136.51.161"
