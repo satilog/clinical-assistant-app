@@ -180,7 +180,7 @@ export default function PatientListWithFilters() {
             </TableCell>
             <TableCell className="px-4 py-2 font-bold">Race</TableCell>
             <TableCell className="px-4 py-2 font-bold">
-              Hospital Expire Flag
+              Hospital Expire Flag 
             </TableCell>
           </TableRow>
         </TableHeader>
