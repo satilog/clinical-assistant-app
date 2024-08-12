@@ -107,7 +107,7 @@ export default function PatientDetail() {
           <TabsTrigger value="general">General</TabsTrigger>
           <TabsTrigger value="lab-events">Lab Events</TabsTrigger>
           <TabsTrigger value="transfer-chart">Transfer Chart</TabsTrigger>
-          <TabsTrigger value="suggestions">Suggestions</TabsTrigger>
+          <TabsTrigger value="suggestions">Assessments</TabsTrigger>
         </TabsList>
 
         <TabsContent value="general">
