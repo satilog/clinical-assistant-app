@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/select";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import dayjs from "dayjs";
+import { SERVER_URL } from '@/lib/constants';
 
 const CustomDot = (props: any) => {
   const { cx, cy, value } = props;
@@ -42,7 +43,7 @@ export default function LabEventsChart({ id }: { id: any }) {
   useEffect(() => {
     fetch(
       //   process.env.NEXT_PUBLIC_API_URL + `/subject_lab_events?subject_id=${id}`
-      "http://34.42.46.22" + `/subject_lab_events?subject_id=${id}`
+      SERVER_URL + `/subject_lab_events?subject_id=${id}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -81,10 +82,9 @@ export default function LabEventsChart({ id }: { id: any }) {
   };
 
   return (
-    <Card className="w-full h-full bg-white shadow-md rounded-lg">
-      <CardHeader className="pb-0 flex flex-row justify-between">
+    <div className="w-full h-full bg-white px-2">
+      <div className="pb-0 flex flex-row justify-between">
         <div className="flex flex-col gap-2">
-          <CardTitle>Lab Event Data</CardTitle>
           <div className="mb-4">
             <p>
               <strong>Category:</strong>{" "}
@@ -112,10 +112,10 @@ export default function LabEventsChart({ id }: { id: any }) {
             </SelectContent>
           </Select>
         </div>
-      </CardHeader>
+      </div>
       <div className="h-full overflow-y-auto">
         <div className="container mx-auto p-4">
-          <ResponsiveContainer width="100%" height={600}>
+          <ResponsiveContainer width="100%" height={400}>
             <LineChart data={filteredData}>
               <XAxis
                 dataKey="charttime"
@@ -168,6 +168,6 @@ export default function LabEventsChart({ id }: { id: any }) {
           </ResponsiveContainer>
         </div>
       </div>
-    </Card>
+    </div>
   );
 }

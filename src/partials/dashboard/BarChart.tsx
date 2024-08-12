@@ -2,13 +2,14 @@
 
 import React, { useEffect, useState } from "react";
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from "recharts";
+import { SERVER_URL } from '@/lib/constants';
 
 export default function StatBarChart({ pathName, fieldName }: { pathName: string, fieldName: string }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     // fetch(process.env.NEXT_PUBLIC_API_URL + pathName)
-    fetch("http://34.42.46.22" + pathName)
+    fetch(SERVER_URL + pathName)
       .then((response) => response.json())
       .then((data) => {
         const formattedData = data.map((item: any) => ({

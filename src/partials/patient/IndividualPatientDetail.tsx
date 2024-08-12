@@ -2,9 +2,23 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import {
+  Table,
+  TableHeader,
+  TableRow,
+  TableCell,
+  TableBody,
+} from "@/components/ui/table";
 import TransferChart from "@/components/charts/TransferChart";
 import LabEventsChart from "@/partials/patient/LabEventsChart";
+import { PiCaretRightBold } from "react-icons/pi";
+import { SERVER_URL } from "@/lib/constants";
+import { Loader2 } from "lucide-react"; // Loader icon
+import ReactMarkdown from "react-markdown"; // Import react-markdown
+import rehypeRaw from "rehype-raw"; // To handle raw HTML
 
 interface PatientRecord {
   subject_id: number;
@@ -19,6 +33,7 @@ interface PatientRecord {
 }
 
 export default function PatientDetail() {
+  const router = useRouter();
   const params = useParams();
   const [patient, setPatient] = useState<PatientRecord | null>(null);
   const [patientDetail, setPatientDetail] = useState<PatientRecord | null>(
@@ -27,33 +42,28 @@ export default function PatientDetail() {
   const [patientTransferHistory, setPatientTransferHistory] = useState<
     any | null
   >(null);
+  const [assessment, setAssessment] = useState<string | null>(null);
+  const [loadingAssessment, setLoadingAssessment] = useState<boolean>(false);
 
   const id = params.id;
 
   useEffect(() => {
     if (id) {
-    //   fetch(process.env.NEXT_PUBLIC_API_URL + `/icu_patients`)
-      fetch("http://34.42.46.22" + `/icu_patients`)
+      fetch(SERVER_URL + `/icu_patients`)
         .then((response) => response.json())
         .then((data) => {
           setPatient(data.filter((p: any) => p.subject_id == id)[0]);
         })
         .catch((error) => console.error("Error fetching data:", error));
 
-      fetch(
-        // process.env.NEXT_PUBLIC_API_URL +
-        "http://34.42.46.22" +
-          `/get_transfer_history?subject_id=${id}`
-      )
+      fetch(SERVER_URL + `/get_transfer_history?subject_id=${id}`)
         .then((response) => response.json())
         .then((data) => {
           setPatientTransferHistory(data);
         })
         .catch((error) => console.error("Error fetching data:", error));
 
-      fetch(
-        "http://34.42.46.22" + `/icu_patient_detail?subject_id=${id}`
-      )
+      fetch(SERVER_URL + `/icu_patient_detail?subject_id=${id}`)
         .then((response) => response.json())
         .then((data) => {
           setPatientDetail(data);
@@ -62,90 +72,138 @@ export default function PatientDetail() {
     }
   }, [id]);
 
+  useEffect(() => {
+    if (id) {
+      setLoadingAssessment(true);
+      fetch(SERVER_URL + `/assessment?subject_id=${id}`)
+        .then((response) => response.json())
+        .then((data) => {
+          setAssessment(data.medical_assessment); // Fetch the markdown text from the API
+          setLoadingAssessment(false);
+        })
+        .catch((error) => {
+          console.error("Error fetching assessment:", error);
+          setLoadingAssessment(false);
+        });
+    }
+  }, [id]);
+
   if (!patient) return <p>Loading...</p>;
 
   return (
-    <div className="flex flex-col justify-start w-full p-5 gap-4">
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-9">
-        <div className="col-span-3 flex flex-col gap-4">
-          <Card className="w-full bg-white shadow-md rounded-lg">
-            <CardHeader>
-              <CardTitle>Patient Details</CardTitle>
-            </CardHeader>
-            <CardContent className="min-h-[calc((100vh-25em)/2)] max-h-[calc((100vh-25em)/2)] overflow-y-auto">
-              <table className="text-sm min-w-full border-collapse border border-gray-200">
-                <tbody>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 font-bold">Patient ID:</td>
-                    <td className="px-4 py-2">{patient.subject_id}</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 font-bold">Gender:</td>
-                    <td className="px-4 py-2">{patient.gender}</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 font-bold">Age:</td>
-                    <td className="px-4 py-2">{patient.anchor_age}</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 font-bold">
-                      Hospital Admissions:
-                    </td>
-                    <td className="px-4 py-2">
-                      {patient.number_of_hospital_admission}
-                    </td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 font-bold">ICU Stays:</td>
-                    <td className="px-4 py-2">{patient.number_of_icu_stay}</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 font-bold">Insurance:</td>
-                    <td className="px-4 py-2">{patient.insurance}</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 font-bold">Marital Status:</td>
-                    <td className="px-4 py-2">{patient.marital_status}</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 font-bold">Race:</td>
-                    <td className="px-4 py-2">{patient.race}</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 font-bold">
-                      Hospital Expire Flag:
-                    </td>
-                    <td className="px-4 py-2">
-                      {patient.hospital_expire_flag ? "Yes" : "No"}
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </CardContent>
-          </Card>
-
-          {/* <Card className="col-span-3 bg-white shadow-md rounded-lg min-h-[calc((100vh-11em)/2)]">
-            <CardHeader>
-              <CardTitle>Transfer Chart</CardTitle>
-            </CardHeader>
-            <div className="h-96 overflow-y-auto">
-              <TransferChart data={patientDetail}></TransferChart>
-            </div>
-          </Card> */}
-          <Card className="col-span-3 bg-white shadow-md rounded-lg w-full max-h-[calc((100vh-11em)/2)]">
-            <CardHeader>
-              <CardTitle>Transfer Chart</CardTitle>
-              <p className="text-sm">Longest 10 stays</p>
-            </CardHeader>
-            <div className="h-96 overflow-y-auto">
-              <TransferChart data={patientTransferHistory}></TransferChart>
-            </div>
-          </Card>
-        </div>
-        <div className="col-span-6 row-span-2 flex flex-col gap-4">
-          <LabEventsChart id={id || ""}></LabEventsChart>
-        </div>
+    <div className="w-full py-5">
+      <div className="flex flex-row items-center justify-start">
+        <h2
+          className="text-xl font-bold hover:underline cursor-pointer"
+          onClick={() => router.push("/patients")}
+        >
+          Patients
+        </h2>
+        <PiCaretRightBold size={18} strokeWidth={10} />
+        <h2 className="text-xl font-bold">{patient.subject_id} </h2>
       </div>
+      <Tabs defaultValue="general" className="pt-4">
+        <TabsList className="mb-4">
+          <TabsTrigger value="general">General</TabsTrigger>
+          <TabsTrigger value="lab-events">Lab Events</TabsTrigger>
+          <TabsTrigger value="transfer-chart">Transfer Chart</TabsTrigger>
+          <TabsTrigger value="suggestions">Suggestions</TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="general">
+          <Table className="text-sm w-full border-collapse border border-gray-200">
+            <TableBody>
+              <TableRow className="border-t border-gray-200">
+                <TableCell className="px-4 py-2 font-bold">Gender:</TableCell>
+                <TableCell className="px-4 py-2">{patient.gender}</TableCell>
+              </TableRow>
+              <TableRow className="border-t border-gray-200">
+                <TableCell className="px-4 py-2 font-bold">Age:</TableCell>
+                <TableCell className="px-4 py-2">
+                  {patient.anchor_age}
+                </TableCell>
+              </TableRow>
+              <TableRow className="border-t border-gray-200">
+                <TableCell className="px-4 py-2 font-bold">
+                  Hospital Admissions:
+                </TableCell>
+                <TableCell className="px-4 py-2">
+                  {patient.number_of_hospital_admission}
+                </TableCell>
+              </TableRow>
+              <TableRow className="border-t border-gray-200">
+                <TableCell className="px-4 py-2 font-bold">
+                  ICU Stays:
+                </TableCell>
+                <TableCell className="px-4 py-2">
+                  {patient.number_of_icu_stay}
+                </TableCell>
+              </TableRow>
+              <TableRow className="border-t border-gray-200">
+                <TableCell className="px-4 py-2 font-bold">
+                  Insurance:
+                </TableCell>
+                <TableCell className="px-4 py-2">{patient.insurance}</TableCell>
+              </TableRow>
+              <TableRow className="border-t border-gray-200">
+                <TableCell className="px-4 py-2 font-bold">
+                  Marital Status:
+                </TableCell>
+                <TableCell className="px-4 py-2">
+                  {patient.marital_status}
+                </TableCell>
+              </TableRow>
+              <TableRow className="border-t border-gray-200">
+                <TableCell className="px-4 py-2 font-bold">Race:</TableCell>
+                <TableCell className="px-4 py-2">{patient.race}</TableCell>
+              </TableRow>
+              <TableRow className="border-t border-gray-200">
+                <TableCell className="px-4 py-2 font-bold">
+                  Hospital Expire Flag:
+                </TableCell>
+                <TableCell className="px-4 py-2">
+                  {patient.hospital_expire_flag ? "Yes" : "No"}
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </TabsContent>
+
+        <TabsContent value="lab-events">
+          <LabEventsChart id={id || ""}></LabEventsChart>
+        </TabsContent>
+
+        <TabsContent
+          value="transfer-chart"
+          className="flex flex-col justify-center py-4"
+        >
+          <div>
+            <p className="text-sm">Longest 10 stays</p>
+            <TransferChart data={patientTransferHistory}></TransferChart>
+          </div>
+        </TabsContent>
+
+        <TabsContent value="suggestions">
+          {loadingAssessment ? (
+            <div className="flex flex-col items-center justify-center h-48">
+              <Loader2 className="animate-spin mb-4" size={32} />
+              <p>Generating assessment...</p>
+              <p className="text-sm text-gray-400">This may take a while</p>
+            </div>
+          ) : (
+            <Card>
+              <CardHeader>
+                <CardTitle>Medical Assessment</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+                  {assessment || ""}
+                </ReactMarkdown>
+              </CardContent>
+            </Card>
+          )}
+        </TabsContent>
+      </Tabs>
     </div>
   );
 }

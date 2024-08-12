@@ -1,87 +1,98 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import Image from "next/image";
 
-export default function Header(props: any) {
-  const router: any = useRouter();
+interface HeaderProps {
+  fullWidth?: boolean;
+  fixed?: boolean;
+  onlyLogo?: boolean;
+}
+
+export default function Header({
+  fullWidth = true,
+  fixed = false,
+  onlyLogo = false,
+}: HeaderProps) {
+  const router = useRouter();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  
-  // This state will hold the current path to trigger re-renders
-  const [currentPath, setCurrentPath] = useState(router.pathname);
-
-//   useEffect(() => {
-//     const handleRouteChange = (url: string) => {
-//       setCurrentPath(url);
-//     };
-
-//     router.events.on("routeChangeComplete", handleRouteChange);
-    
-//     // Cleanup event listener on unmount
-//     return () => {
-//       router.events.off("routeChangeComplete", handleRouteChange);
-//     };
-//   }, [router.events]);
 
   const tabs = [
-    { name: "Dashboard", href: "/dashboard" },
-    { name: "Patients", href: "/patients" },
+    { name: "Dashboard", href: "/dashboard", type: "link" },
+    { name: "Patients", href: "/patients", type: "link" },
   ];
 
   return (
-    <div className="flex w-full items-center justify-around custom-bg-white-color h-20 border-b-[1.5px] custom-border-color">
+    <>
       <div
-        className={`flex w-full px-5 justify-between items-center custom-bg-invert-color`}
+        className={`bg-white text-black w-full h-16 border-b-2 border-gray-200 z-30`}
       >
         <div
-          className="custom-text-color text-2xl font-bold cursor-pointer"
-          onClick={() => router.push("/dashboard")}
+          className={`${
+            fullWidth ? "w-screen" : "container"
+          } ${
+            onlyLogo ? "justify-center" : "justify-between"
+          } items-center h-full px-10 flex`}
         >
-            MIMIC IV APP
-        </div>
-
-        {/* Tabs and Sign Up Button Group */}
-        <div className="flex items-center gap-4">
-          {/* Mobile Dropdown Button */}
-          <div className="sm:hidden relative">
-            <button
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="text-md custom-text-color focus:outline-none"
+          {onlyLogo ? (
+            <div
+              className="flex items-center gap-1 cursor-pointer"
+              onClick={() => router.push("/dashboard")}
             >
-              Menu
-            </button>
-            {isDropdownOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10">
-                {tabs.map((tab, index) => (
-                  <div
-                    key={index}
-                    className="custom-text-color text-md cursor-pointer hover:bg-gray-100 px-4 py-2"
-                    onClick={() => {
-                      router.push(tab.href);
-                      setIsDropdownOpen(false);
-                    }}
-                  >
-                    {tab.name}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Navigation Tabs for Larger Screens */}
-          <div className="hidden sm:flex flex-row gap-8">
-            {tabs.map((tab, index) => (
+              <span className="text-2xl font-bold">Clinical Assistant</span>
+            </div>
+          ) : (
+            <>
               <div
-                key={index}
-                className="custom-text-color text-md cursor-pointer hover:text-red-600"
-                onClick={() => router.push(tab.href)}
+                className="flex items-center gap-1 cursor-pointer"
+                onClick={() => router.push("/dashboard")}
               >
-                {tab.name}
+                <span className="text-2xl font-bold">Clinical Assistant</span>
               </div>
-            ))}
-          </div>
+
+              <div className="flex items-center gap-4">
+                <div className="block sm:hidden">
+                  <button
+                    className="text-gray-800"
+                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  >
+                    Menu
+                  </button>
+                  {isDropdownOpen && (
+                    <div className="absolute mt-2 bg-white shadow-lg rounded-md">
+                      {tabs.map((tab, index) => (
+                        <div
+                          key={index}
+                          className="px-4 py-2 cursor-pointer hover:bg-gray-100 text-xs"
+                          onClick={() => {
+                            setIsDropdownOpen(false);
+                            router.push(tab.href);
+                          }}
+                        >
+                          {tab.name}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                <div className="hidden sm:flex flex-row justify-end gap-1">
+                  {tabs.map((tab, index) => (
+                    <span
+                      key={index}
+                      className={`text-sm font-bold cursor-pointer p-1 px-2 rounded-md hover:bg-gray-200`}
+                      onClick={() => router.push(tab.href)}
+                    >
+                      {tab.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </>
+          )}
         </div>
       </div>
-    </div>
+    </>
   );
 }

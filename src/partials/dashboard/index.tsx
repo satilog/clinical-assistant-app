@@ -34,7 +34,7 @@ export default function DashboardPartial() {
       <div className="hidden flex-col md:flex">
         <div className="flex-1 space-y-4 p-5">
           <div className="flex items-center justify-between space-y-2">
-            <h2 className="text-2xl font-bold tracking-tight">Dashboard</h2>
+            {/* <h2 className="text-2xl font-bold tracking-tight">Dashboard</h2> */}
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <Card>

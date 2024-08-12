@@ -52,7 +52,7 @@ const TransferChart: React.FC<{ data: TransferData[] }> = ({ data }) => {
       })
       .filter((a) => a.data[0].y > 3)
       .sort((a, b): any => a.data[0].y < b.data[0].y)
-      .slice(0, 10),
+      // .slice(0, 10),
   };
 
   const options: any = {
