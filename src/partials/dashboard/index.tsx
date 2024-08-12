@@ -14,14 +14,8 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import BarChart from "@/partials/dashboard/BarChart";
 import ICUPatientList from "@/partials/dashboard/ICUPatientList";
-
-// import { CalendarDateRangePicker } from "@/components/components/date-range-picker";
-// import { MainNav } from "@/components/components/main-nav";
-// import { Overview } from "@/components/components/overview";
-// import { RecentSales } from "@/components/components/recent-sales";
-// import { Search } from "@/components/components/search";
-// import TeamSwitcher from "@/components/components/team-switcher";
-// import { UserNav } from "@/components/components/user-nav";
+import { useEffect, useState } from "react";
+import { SERVER_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -29,6 +23,28 @@ export const metadata: Metadata = {
 };
 
 export default function DashboardPartial() {
+  const [stats, setStats] = useState<any>([]);
+
+  // [
+  //   {
+  //     total_patients: 299712,
+  //     total_hospital_admissions: 431231,
+  //     total_transfers: 1890972,
+  //     total_diagnosis_made: 109282,
+  //     average_length_of_icu_stay_days: 3.4519307599257583,
+  //     total_icu_admission: 73181,
+  //   },
+  // ];
+  useEffect(() => {
+    // fetch(process.env.NEXT_PUBLIC_API_URL + `/icu_patients`)
+    fetch(SERVER_URL + `/get_major_stats`)
+      .then((response) => response.json())
+      .then((data) => {
+        setStats(data[0]);
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+
   return (
     <div className="w-full min-h-[calc(100vh-9em)]">
       <div className="hidden flex-col md:flex">
@@ -40,32 +56,7 @@ export default function DashboardPartial() {
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">
-                  Total Revenue
-                </CardTitle>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="h-4 w-4 text-muted-foreground"
-                >
-                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                </svg>
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold">$45,231.89</div>
-                <p className="text-xs text-muted-foreground">
-                  +20.1% from last month
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">
-                  Subscriptions
+                  Patients
                 </CardTitle>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -83,15 +74,39 @@ export default function DashboardPartial() {
                 </svg>
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">+2350</div>
+                <div className="text-2xl font-bold">{stats.total_patients}</div>
+                <p className="text-xs text-muted-foreground"></p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-medium">
+                  Hospital Admissions
+                </CardTitle>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="h-4 w-4 text-muted-foreground"
+                >
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </CardHeader>
+              <CardContent>
+              <div className="text-2xl font-bold">{stats.total_hospital_admissions}</div>
                 <p className="text-xs text-muted-foreground">
-                  +180.1% from last month
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">Sales</CardTitle>
+                <CardTitle className="text-sm font-medium">Transfers</CardTitle>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -107,16 +122,15 @@ export default function DashboardPartial() {
                 </svg>
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">+12,234</div>
+                <div className="text-2xl font-bold">{stats.total_transfers}</div>
                 <p className="text-xs text-muted-foreground">
-                  +19% from last month
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">
-                  Active Now
+                  Diagnoses
                 </CardTitle>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -132,10 +146,7 @@ export default function DashboardPartial() {
                 </svg>
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">+573</div>
-                <p className="text-xs text-muted-foreground">
-                  +201 since last hour
-                </p>
+                <div className="text-2xl font-bold">{stats.total_diagnosis_made}</div>
               </CardContent>
             </Card>
           </div>
@@ -179,7 +190,7 @@ export default function DashboardPartial() {
             </Card>
             <Card className="col-span-3">
               <CardHeader>
-                <CardTitle>ICU Patients</CardTitle>
+                <CardTitle>ICU Patients ({stats.total_icu_admission})</CardTitle>
               </CardHeader>
               <div className="h-[calc(7*4rem)] overflow-y-auto">
                 <ICUPatientList />
